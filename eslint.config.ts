@@ -17,11 +17,11 @@ export default defineConfigWithVueTs(
   globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
 
   pluginVue.configs['flat/essential'],
-  vueTsConfigs.recommended,
+  vueTsConfigs.base,
   skipFormatting,
   {
     rules: {
-      '@vue/multi-word-component-names': 'off',
+      'vue/multi-word-component-names': 'off',
     },
   },
 )
